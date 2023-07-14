@@ -45,13 +45,21 @@ Prerequisites
 Before running the code, make sure you have the following Python libraries installed on your system:
 
 os
+
 pandas
+
 numpy
+
 librosa
+
 matplotlib.pyplot
+
 sklearn.model_selection
+
 tensorflow.keras.models
+
 tensorflow.keras.layers
+
 tensorflow.keras.optimizers
 
 You can install these libraries using pip:
