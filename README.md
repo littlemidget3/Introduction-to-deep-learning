@@ -4,26 +4,41 @@
 
 **Predictive Maintenance using Machine Sound**
 
-Project Overview
+Project Overview:
 
 This project aims to predict the operational status (on or off) of a machine using audio data. This is a classic example of a binary classification task applied in the realm of predictive maintenance. The predictive model is trained to discern whether Machine 9 is operational based on the sound it produces.
 
-Code Structure
+Code Structure:
+
 The code for this project is primarily contained in a Jupyter notebook named Classifier2.ipynb. Here's a brief rundown of its structure:
 
-Importing Libraries: The necessary Python libraries for data manipulation, audio processing, and machine learning model development are imported.
+Importing Libraries: 
 
-Data Loading: Audio files, which serve as the primary data source, are loaded from a designated directory. Each audio file is a recording of the machine's sound.
+The necessary Python libraries for data manipulation, audio processing, and machine learning model development are imported.
 
-Feature Extraction: The Mel-frequency cepstral coefficients (MFCCs) of the audio files are computed using the librosa library. These serve as the feature set for the machine learning model.
+Data Loading: 
 
-Label Extraction: Labels, which indicate whether the machine is on or off, are extracted directly from the audio filenames.
+Audio files, which serve as the primary data source, are loaded from a designated directory. Each audio file is a recording of the machine's sound.
 
-Data Preparation: The feature set and the labels are partitioned into a training set and a testing set.
+Feature Extraction: 
 
-Model Training: A neural network model is trained on the training set. The model architecture includes a flatten layer, a dense layer with a ReLU activation function, a dropout layer to prevent overfitting, and a final dense layer with a sigmoid activation function for binary classification.
+The Mel-frequency cepstral coefficients (MFCCs) of the audio files are computed using the librosa library. These serve as the feature set for the machine learning model.
 
-Model Evaluation: The performance of the trained model is evaluated on the testing set.
+Label Extraction: 
+
+Labels, which indicate whether the machine is on or off, are extracted directly from the audio filenames.
+
+Data Preparation: 
+
+The feature set and the labels are partitioned into a training set and a testing set.
+
+Model Training: 
+
+A neural network model is trained on the training set. The model architecture includes a flatten layer, a dense layer with a ReLU activation function, a dropout layer to prevent overfitting, and a final dense layer with a sigmoid activation function for binary classification.
+
+Model Evaluation: 
+
+The performance of the trained model is evaluated on the testing set.
 
 Getting Started
 Prerequisites
