@@ -4,44 +4,46 @@
 
 **Predictive Maintenance using Machine Sound**
 
-Project Overview:
+**Project Overview:**
 
 This project aims to predict the operational status (on or off) of a machine using audio data. This is a classic example of a binary classification task applied in the realm of predictive maintenance. The predictive model is trained to discern whether Machine 9 is operational based on the sound it produces.
 
-Code Structure:
+**Code Structure:**
 
 The code for this project is primarily contained in a Jupyter notebook named Classifier2.ipynb. Here's a brief rundown of its structure:
 
-Importing Libraries: 
+**Importing Libraries: **
 
 The necessary Python libraries for data manipulation, audio processing, and machine learning model development are imported.
 
-Data Loading: 
+**Data Loading: **
 
 Audio files, which serve as the primary data source, are loaded from a designated directory. Each audio file is a recording of the machine's sound.
 
-Feature Extraction: 
+**Feature Extraction:** 
 
 The Mel-frequency cepstral coefficients (MFCCs) of the audio files are computed using the librosa library. These serve as the feature set for the machine learning model.
 
-Label Extraction: 
+**Label Extraction: **
 
 Labels, which indicate whether the machine is on or off, are extracted directly from the audio filenames.
 
-Data Preparation: 
+**Data Preparation: **
 
 The feature set and the labels are partitioned into a training set and a testing set.
 
-Model Training: 
+**Model Training: **
 
 A neural network model is trained on the training set. The model architecture includes a flatten layer, a dense layer with a ReLU activation function, a dropout layer to prevent overfitting, and a final dense layer with a sigmoid activation function for binary classification.
 
-Model Evaluation: 
+**Model Evaluation: **
 
 The performance of the trained model is evaluated on the testing set.
 
-Getting Started
+**Getting Started**
+
 Prerequisites
+
 Before running the code, make sure you have the following Python libraries installed on your system:
 
 os
@@ -76,19 +78,24 @@ Place your audio files in the directory specified in the code.
 Run the Jupyter notebook (Classifier2.ipynb).
 The notebook is designed to be self-explanatory and should run without any issues given that the prerequisites are met.
 
-Contributing
+**Contributing**
+
 Contributions to this project are welcome. If you encounter a bug or think of a feature that would enhance the project, feel free to open an issue or submit a pull request.
 
-License
+**License**
+
 This project is licensed under the MIT License. See the LICENSE file for more details.
 
-Contact
+**Contact**
+
 For any questions or concerns, please open an issue on this repository.
 
-Acknowledgements
+**Acknowledgements**
+
 Thank you for your interest in this project. Your contributions and suggestions are highly appreciated!
 
-Frequently Asked Questions
+**Frequently Asked Questions**
+
 Q: I'm new to Python. Can I still use this code?
 
 A: Absolutely! This project is designed to be user-friendly. If you encounter any issues or have any questions, please open an issue on this repository.
