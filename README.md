@@ -16,7 +16,7 @@ The code for this project is primarily contained in a Jupyter notebook named Cla
 
 The necessary Python libraries for data manipulation, audio processing, and machine learning model development are imported.
 
-**Data Loading: **
+**Data Loading:**
 
 Audio files, which serve as the primary data source, are loaded from a designated directory. Each audio file is a recording of the machine's sound.
 
@@ -24,19 +24,19 @@ Audio files, which serve as the primary data source, are loaded from a designate
 
 The Mel-frequency cepstral coefficients (MFCCs) of the audio files are computed using the librosa library. These serve as the feature set for the machine learning model.
 
-**Label Extraction: **
+**Label Extraction:**
 
 Labels, which indicate whether the machine is on or off, are extracted directly from the audio filenames.
 
-**Data Preparation: **
+**Data Preparation:**
 
 The feature set and the labels are partitioned into a training set and a testing set.
 
-**Model Training: **
+**Model Training:**
 
 A neural network model is trained on the training set. The model architecture includes a flatten layer, a dense layer with a ReLU activation function, a dropout layer to prevent overfitting, and a final dense layer with a sigmoid activation function for binary classification.
 
-**Model Evaluation: **
+**Model Evaluation:**
 
 The performance of the trained model is evaluated on the testing set.
 
