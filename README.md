@@ -3,6 +3,7 @@
 
 
 **Predictive Maintenance using Machine Sound**
+
 Project Overview
 
 This project aims to predict the operational status (on or off) of a machine using audio data. This is a classic example of a binary classification task applied in the realm of predictive maintenance. The predictive model is trained to discern whether Machine 9 is operational based on the sound it produces.
